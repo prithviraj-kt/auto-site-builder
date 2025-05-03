@@ -8,7 +8,12 @@ import Link from "next/link";
 import { MessageContext } from '@/context/MessagesContext';
 import { UserDetailContext } from '@/context/UserDetailContext';
 import SigninDialog from './SigninDialog';
+
+import { useRouter } from 'next/navigation';
 function Hero() {
+
+    const router = useRouter();
+
     const [userInput, setUserInput] = useState();
     const { messages, setMessages } = useContext(MessageContext);
     const { userDetail, setUserDetail } = useContext(UserDetailContext)
@@ -19,10 +24,14 @@ function Hero() {
         //     return
         // }
         setUserInput(input)
-        setMessages({
+        setMessages([{
             role: 'user',
             content: input
-        })
+        }
+
+        ])
+
+        router.push('/chat/1')
     }
     return (
         <div className="container mx-auto px-4 py-6">
@@ -98,7 +107,7 @@ function Hero() {
                     </div>
                 </div>
                 <div>
-                  {/* <SigninDialog openDialog={openDialog} closeDialog={(v)=>setOpenDialog(false)} /> */}
+                    {/* <SigninDialog openDialog={openDialog} closeDialog={(v)=>setOpenDialog(false)} /> */}
                 </div>
             </div>
         </div>
