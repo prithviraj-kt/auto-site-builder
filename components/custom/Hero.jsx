@@ -23,15 +23,16 @@ function Hero() {
         //     setOpenDialog(true)
         //     return
         // }
-        setUserInput(input)
+        setUserInput(input);
+        // Clear existing messages and set only the new one
         setMessages([{
             role: 'user',
             content: input
-        }
-
-        ])
-
-        router.push('/chat/1')
+        }]);
+        // Add a small delay to ensure state updates before navigation
+        setTimeout(() => {
+            router.push('/chat/1');
+        }, 100);
     }
     return (
         <div className="container mx-auto px-4 py-6">
