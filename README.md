@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI-Powered Website Builder
 
-## Getting Started
+A cutting-edge React.js application that leverages **@google/generative-ai** along with **codesandbox/sandpack-react** to create fully functional websites dynamically from simple text prompts. Simply enter your prompt, and the system generates an interactive, ready-to-use website instantly.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Prompt-Based Website Generation:** Build complete websites by describing your requirements in natural language
+- **Live Code Editing & Preview:** Uses Sandpack React to provide an in-browser code editor with live preview
+- **Powered by Google's Generative AI:** Utilizes @google/generative-ai for intelligent code generation and customization
+- **Fast & Interactive:** Instant feedback with editable code for further refinement
+- **No Setup Required:** Web-based, no additional environment setup needed
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tech Stack
 
-## Learn More
+- **Frontend:** React.js
+- **AI Integration:** @google/generative-ai for code generation
+- **Code Editor & Preview:** codesandbox/sandpack-react
+- **Styling:** CSS / any CSS framework as per generated code
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Installation & Setup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Prerequisites
 
-## Deploy on Vercel
+- Node.js (>= 16.x)
+- npm or yarn
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Steps
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+Open [http://localhost:3000](http://localhost:3000) to view the app.
+
+---
+
+## Usage
+
+1. Enter the website requirements or prompt describing the website you want.
+2. The AI generates the website code in real-time.
+3. Use the embedded Sandpack editor to view, edit, and experiment with the generated code.
+4. Export or deploy your custom-built website instantly.
+
+---
+
+## Folder Structure
+
